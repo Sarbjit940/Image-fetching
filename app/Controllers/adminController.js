@@ -60,7 +60,7 @@ async function mongo(image) {
       var myobj = { imageurl: image };
       dbo.collection("imageUrl").insertOne(myobj, function (err, res) {
         if (err) throw err;
-        console.log("1 document inserted");
+        console.log("Image is successfully added to mongodb cloud cluster");
       });
     });
   } catch (e) {
